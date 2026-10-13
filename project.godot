@@ -1,0 +1,29 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+
+config_version=5
+
+[application]
+
+config/name="Sprite Juice Kit Lite"
+config/description="Free sample of Sprite Juice Kit 2D for Godot 4 by REEBOO Labs: hit-stop, screen shake, hit flash."
+run/main_scene="res://demo/demo.tscn"
+config/features=PackedStringArray("4.4", "GL Compatibility")
+
+[autoload]
+
+JuiceLite="*res://addons/sprite_juice_lite/juice_lite.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/sprite_juice_lite/plugin.cfg")
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
